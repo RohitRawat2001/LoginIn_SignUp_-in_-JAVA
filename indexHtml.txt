@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>login and registration form</title>
+ <style>
+ 
+      button {
+       display: inline-block;
+  background-color: cyan;
+  padding: 20px;
+  width: 200px;
+  color: rgb(0, 0, 0);
+  text-align: center;
+  border: 4px double rgb(0, 0, 64)cccccc;
+  border-radius: 10px;
+  font-size: 15px;
+  cursor: pointer; /* add this line */
+  margin: 5px;
+
+      }
+      button:hover {
+  background-color: red;
+}
+
+input[type=text], select {
+  width: 1000%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  
+}
+
+input[type=password], select {
+  width: 1000%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  
+}
+
+div {
+  border-radius: 9px;
+  background-color: white;
+  padding: 20px;
+  width: 50px;
+ 
+  
+  
+}
+
+    </style>
+</head>
+<body  >
+	
+	<h1 style="color: black" >Login form</h1>
+	<div>
+	<form id="login" class="input-group" action="hello" method="post">
+	            <label for="fname" >Email</label>
+                <input type="text" class="input-field" name="email" placeholder="Enter Email"required>
+                <label for="fname">Password</label>
+                <input type="password" class="input-field" name="password" placeholder="Enter Password"required>
+                
+                <button type="submit" class="submit-btn">Log In</button>
+                
+                 <button onclick="location.href = 'register.html';" id="myButton" class="float-left submit-button">Registration</button>
+            </form>
+           
+           
+            </div>
+</body>
+</html>

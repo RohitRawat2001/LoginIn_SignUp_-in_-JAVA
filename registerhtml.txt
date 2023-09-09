@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Registration Form</title>
+ <style>
+      button {
+       display: inline-block;
+  background-color: cyan;
+  padding: 20px;
+  width: 200px;
+  color: black;
+  text-align: center;
+   border: 4px double rgb(0, 0, 64)cccccc;
+  border-radius: 10px;
+  font-size: 15px;
+  cursor: pointer; /* add this line */
+  margin: 5px;
+      }
+      button:hover {
+  background-color: red;
+}
+
+input[type=text], select {
+  width: 1000%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  
+}
+input[type=password], select {
+  width: 1000%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  
+}
+
+div {
+  border-radius: 9px;
+  background-color: white;
+  padding: 20px;
+  width: 50px;
+  
+  
+}
+   </style>
+</head>
+<body>
+    <h1 style="color: black" >Registration form</h1>
+    <div>
+     <form id="register" class="input-group" action="hello2" method="post">
+            <label for="fname">Name</label>
+                <input type="text" class="input-field" name="name" placeholder="Enter Name"required>
+                <label for="fname">Email</label>
+                <input type="text" class="input-field" name="email" placeholder="Enter Email Id"required>
+                <label for="fname">Password</label>
+                <input type="password" class="input-field" name="password" placeholder="Enter Password"required>
+                
+                <button type="submit" class="submit-btn"  >Register</button>
+            </form>
+    
+    </div>
+</body>
+</html>
